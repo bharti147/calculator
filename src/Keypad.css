@@ -1,0 +1,29 @@
+/* .keypad{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(163, 190, 213);
+} */
+.keyrow{
+    height: 15.75%;
+    border: 1px solid white;
+    width: 100%;
+    /* background-color: rgb(163, 190, 213); */
+}
+.row1btn{
+    height: 100%;
+    border: 1px solid rgb(226, 223, 223);
+    width: 33.32%;
+    background-color: rgb(163, 190, 213);
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(56, 54, 54);
+}
+.row2btn{
+    height: 100%;
+    border: 1px solid rgb(226, 223, 223);
+    width: 25%;
+    background-color: rgb(163, 190, 213);
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(56, 54, 54);
+}
