@@ -2,16 +2,17 @@
     height: 20%;
     width: 100%;
     background-color: rgb(49, 55, 55);
-    color: whitesmoke;
+    color: rgb(222, 218, 218);
     /* min-height: 20%; */
     /* overflow: auto; */
     display: flex;
    flex-flow: column;
- 
-
+  
 
 }
-.display h1{
-     margin: 12px ;
+ p{
+     margin: 20px ;
+     font-weight: bold;
+     font-size: 20px;
      
 }

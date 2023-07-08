@@ -10,7 +10,7 @@ function Calculator() {
 
 const onButtonClick = (buttonValue) =>{
   console.log(buttonValue);
-  if(buttonValue==='=')
+  if(buttonValue==='='){
   try {
     const evalResult = eval(displayValue);
     setResult(evalResult);
@@ -18,11 +18,22 @@ const onButtonClick = (buttonValue) =>{
   catch (error) {
     setResult('Error');
   }
-  else {
+}
+  else if(buttonValue === 'AC'){
+    
+    setResult('');
+    setDisplayValue('');
+  }
+  else if (buttonValue === 'DEL') {
+    // Delete the last character from the expression
+    setDisplayValue((prevExpression) => prevExpression.slice(0, -1));
+  } 
+  else  {
     // Append the clicked button value to the displayValue
     setDisplayValue((prevdisplayValue) => prevdisplayValue + buttonValue);
   }
 }
+
 
   
 

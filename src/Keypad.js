@@ -11,9 +11,9 @@ function Keypad(props) {
     <>
 
    <div className='keyrow'>
-    <button className='row1btn'>AC</button>
-    <button className='row1btn'>DEL</button>
-    <button className='row1btn'>/</button>
+    <button className='row1btn' onClick={() => props.handleNumberClick('AC')}>AC</button>
+    <button className='row1btn' onClick={() => props.handleNumberClick('DEL')}>DEL</button>
+    <button className='row1btn' onClick={() => props.handleNumberClick('/')}>/</button>
    </div>
    <div className='keyrow'>
     <button className='row2btn'  onClick={() => props.handleNumberClick('1')} >1</button>
